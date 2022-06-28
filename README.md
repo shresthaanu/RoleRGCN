@@ -6,8 +6,6 @@ This repository contains the code for the paper
 # Data Sources
 FakeNewsNet-PolitiFact dataset can be downloaded using the code provided at https://github.com/KaiDMML/FakeNewsNet
 
-For the details about how to download the dataset that we have used in paper, please follow the instructions provided here https://github.com/shresthaanu/ECIR21TextualCharacteristicsOfFakeNews/tree/main/Data
-
 # Content
 
 * Script to generate train-test split : ```Code/Preprocess/five_fold_train_test_split.ipynb```
