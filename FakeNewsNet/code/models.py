@@ -72,15 +72,6 @@ class RGCN2_combine_losses(nn.Module):
         self.source_conv2 = HeteroGraphConv({rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
         self.follower_conv2 = HeteroGraphConv({rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
 
-        self.user_conv3 = HeteroGraphConv({ rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
-        self.news_conv3 = HeteroGraphConv({ rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
-        self.source_conv3 = HeteroGraphConv({rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
-        self.follower_conv3 = HeteroGraphConv({rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
-
-        self.user_conv4 = HeteroGraphConv({ rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
-        self.news_conv4 = HeteroGraphConv({ rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
-        self.source_conv4 = HeteroGraphConv({rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
-        self.follower_conv4 = HeteroGraphConv({rel: GraphConv(hid_feats, hid_feats) for rel in rel_names}, aggregate='mean')
         
         
         self.user_layer = nn.Linear(hid_feats, out_feats_user)
@@ -98,8 +89,6 @@ class RGCN2_combine_losses(nn.Module):
         self.input2 = {'user':self.user_input2, 'news':self.news_input2, 'source':self.source_input2, 'follower':self.follower_input2}
         self.conv1 = {'user':self.user_conv1, 'news':self.news_conv1, 'source':self.source_conv1, 'follower':self.follower_conv1}
         self.conv2 = {'user':self.user_conv2, 'news':self.news_conv2, 'source':self.source_conv2, 'follower':self.follower_conv2}
-        self.conv3 = {'user':self.user_conv3, 'news':self.news_conv3, 'source':self.source_conv3, 'follower':self.follower_conv3}
-        self.conv4 = {'user':self.user_conv4, 'news':self.news_conv4, 'source':self.source_conv4, 'follower':self.follower_conv4}
         self.lin1 = {'user':self.user_layer, 'news':self.news_layer, 'source':self.source_layer, 'follower':self.follower_layer}
         self.lin2 = {'user':self.user_layer2, 'news':self.news_layer2, 'source':self.source_layer2, 'follower':self.follower_layer2}
         # self.sig = {'user':self.sigmoid_layer, 'news':self.sigmoid_layer, 'source':self.sigmoid_layer, 'follower':self.sigmoid_layer}
