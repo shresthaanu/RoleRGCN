@@ -8,7 +8,7 @@ FakeNewsNet-PolitiFact dataset can be downloaded using the code provided at http
 
 # Content
 
-* Script to generate train-test split : ```Code/Preprocess/five_fold_train_test_split.ipynb```
+* Script to generate train-test split : ```Code/Utils/five_fold_train_test_split.ipynb```
 * Script to run baseline models for FakeNewsNet-PolitiFact dataset: ```Code/Experiments/FakeNewsNet-PolitiFact/Baseline_exp.ipynb```
 * Script to run Role-RGCN model for FakeNewsNet-PolitiFact dataset: ```Code/Experiments/FakeNewsNet-PolitiFact/Role_RGCN_exp.ipynb```
 * * Script to run baseline models for PolitiFact-2021 dataset: ```Code/Experiments/PolitiFact-2021/Baseline_exp.ipynb```
