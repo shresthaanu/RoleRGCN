@@ -5,6 +5,7 @@ This repository contains the code for the paper
 
 # Data Sources
 FakeNewsNet-PolitiFact dataset can be downloaded using the code provided at https://github.com/KaiDMML/FakeNewsNet
+
 PolitiFact-2021 dataset can be downloaded using the instructions provided at ```Data/PolitiFact-2021/Readme```
 
 # Content
