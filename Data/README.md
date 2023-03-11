@@ -1,4 +1,4 @@
 # Data Sources
-FakeNewsNet-PolitiFact dataset can be downloaded using the code provided at https://github.com/KaiDMML/FakeNewsNet
+The FakeNewsNet-PolitiFact dataset can be downloaded using the code provided at https://github.com/KaiDMML/FakeNewsNet
 
-PolitiFact-2021 will be released upon publication of the paper.
+The PolitiFact-2021 dataset can be found at https://github.com/shresthaanu/RoleRGCN/blob/master/Data/Politifact-2021.csv
